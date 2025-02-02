@@ -1,5 +1,6 @@
 {
   "name": "@erp/estoque",
+  "private": false,
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Clezio Alves dos Santos <CLEZIO.SYSMAP@fleetcor.com.br>",
@@ -17,5 +18,6 @@
   "scripts": {
     "tsc": "tsc",
     "test": "node ./__tests__/index.test.js"
-  }
+  },
+  "gitHead": "61056dc4f4b2a898ce33fd538b9b5b4717dd4f7c"
 }
