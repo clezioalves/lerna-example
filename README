@@ -3,16 +3,18 @@ https://medium.com/rd-shipit/como-trabalhar-com-monorepos-usando-o-lerna-9130be2
 https://blog.logrocket.com/setting-up-monorepo-lerna-typescript/
 
 # Comandos
-lerna bootstrap
 lerna run tsc
-npx lerna create @erp/financeiro packages/financeiro
-npx lerna create @erp/estoque packages/estoque
-npx lerna create @erp/vendas packages/vendas
+
+# Criar novos pacotes
+lerna create @erp/financeiro packages
+lerna create @erp/estoque packages
+lerna create @erp/vendas packages
 
 
 # Para testar em integration
-npm install @graphql/product --workspace=integration 
-npm install @graphql/customer --workspace=integration 
+npm install @erp/financeiro --workspace=integration 
+npm install @erp/estoque --workspace=integration 
+npm install @erp/vendas --workspace=integration 
 
 
 

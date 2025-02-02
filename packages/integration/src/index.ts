@@ -1,7 +1,5 @@
 
-import { CustomerIdentification } from "@graphql/customer";
+import { Invoice } from "@erp/financeiro";
 
-const model = new CustomerIdentification();
-model.companyIdentification = "companyIdentification";
-model.nrc = "nrc";
-console.log(new CustomerIdentification);
+const model = new Invoice(1, 23, new Date());
+console.log(model);
