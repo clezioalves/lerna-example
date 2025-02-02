@@ -1,0 +1,23 @@
+https://medium.com/rd-shipit/como-trabalhar-com-monorepos-usando-o-lerna-9130be2b9245
+
+https://blog.logrocket.com/setting-up-monorepo-lerna-typescript/
+
+# Comandos
+lerna bootstrap
+lerna run tsc
+npx lerna create @erp/financeiro packages/financeiro
+npx lerna create @erp/estoque packages/estoque
+npx lerna create @erp/vendas packages/vendas
+
+
+# Para testar em integration
+npm install @graphql/product --workspace=integration 
+npm install @graphql/customer --workspace=integration 
+
+
+
+# Agora publique os pacotes:
+npx lerna publish
+
+# Se for a primeira publicação e estiver usando scoped packages (exemplo: @seu-usuario/core), publique como público:
+npx lerna publish --access public
