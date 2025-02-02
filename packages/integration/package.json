@@ -1,6 +1,6 @@
 {
   "name": "integration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@erp/financeiro": "^1.0.0",
     "@erp/estoque": "^1.0.0",
-    "@erp/vendas": "^1.0.0",
+    "@erp/financeiro": "^1.0.1",
+    "@erp/vendas": "^1.0.1",
     "ts-node": "^7.0.1"
   }
 }
